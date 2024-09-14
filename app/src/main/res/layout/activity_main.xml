@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/viewOrdersButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        app:srcCompat="@drawable/baseline_directions_bus_24" />
+
+    <EditText
+        android:id="@+id/editTextFrom"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Звідки"
+        android:textSize="24sp"
+        android:inputType="text"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/route" />
+
+
+    <EditText
+        android:id="@+id/editTextTo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:hint="Куди"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFrom" />
+
+    <Spinner
+        android:layout_gravity="center"
+        android:id="@+id/transportTypeSpinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:entries="@array/transport_types" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пошук"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:backgroundTint="@drawable/button_background"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"/>
+
+
+
+
+</LinearLayout>

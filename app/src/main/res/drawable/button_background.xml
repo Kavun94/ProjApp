@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Стан при натисканні -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#FF5722"/> <!-- Колір при натисканні -->
+            <corners android:radius="24dp"/> <!-- Закруглені кути -->
+            <stroke android:width="2dp" android:color="#FF7043"/> <!-- Обводка -->
+        </shape>
+    </item>
+
+    <!-- Звичайний стан -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#FF7043"
+                android:endColor="#FF5722"
+                android:angle="90"/> <!-- Градієнт відтінків -->
+            <corners android:radius="24dp"/> <!-- Закруглені кути -->
+            <stroke android:width="2dp" android:color="#FF8A65"/> <!-- Обводка -->
+            <padding
+                android:left="16dp"
+                android:right="16dp"
+                android:top="10dp"
+                android:bottom="10dp"/>
+        </shape>
+    </item>
+</selector>

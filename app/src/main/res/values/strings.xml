@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Journey</string>
+    <string-array name="transport_types">
+        <item>Усі</item>
+        <item>Автобус</item>
+        <item>Потяг</item>
+    </string-array>
+</resources>
